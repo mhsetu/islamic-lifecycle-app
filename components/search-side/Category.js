@@ -20,7 +20,10 @@ const Category = ({ category }) => {
               <div className='flex gap-x-4'>
                 <div className='avatar'>
                   <div className='size-12 flex-none rounded bg-gray-50'>
-                    <Image src={fever} alt='fever' />
+                    <img
+                      src='https://i.postimg.cc/k45XV5Xb/Frame1.png'
+                      alt='fever'
+                    />
                   </div>
                 </div>
 

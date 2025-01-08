@@ -17,8 +17,8 @@ const SearchSide = () => {
       </h2>
       <div className='mx-4 mt-4'>
         <label className='input w-full max-w-xs flex items-center mt-2'>
-          <Image
-            src={search}
+          <img
+            src='https://i.postimg.cc/3rS90f94/Frame.png'
             height={24}
             width={24}
             alt='search'

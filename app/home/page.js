@@ -1,14 +1,11 @@
 'use client';
-import React, { useContext, useEffect, useState } from 'react';
-import search from '../../public/assets/Frame.png';
-import Image from 'next/image';
+import React, { useContext } from 'react';
+
 import SearchSide from '@/components/search-side/Search-Side';
 import { ContextProvider } from '@/context/context';
-import arbi from '../../public/assets/allah 1 (Traced).png';
-import profile from '../../public/assets/Group 174 (1).png';
 
 const Homepage = () => {
-  const { sendDuas, content } = useContext(ContextProvider);
+  const { content } = useContext(ContextProvider);
 
   const {
     dua_name_en,
@@ -27,9 +24,19 @@ const Homepage = () => {
         <div className='flex justify-between'>
           <label className='input w-full max-w-xs flex items-center justify-between mr-5'>
             <input type='text' placeholder='Search by Dua Name' />
-            <Image src={search} alt='search' className='  size-6  rounded' />
+            <img
+              src='https://i.postimg.cc/3rS90f94/Frame.png'
+              alt='search'
+              className='  size-6  rounded'
+            />
           </label>
-          <Image src={profile} width={70} height={70} alt='profile' />
+
+          <img
+            src='https://i.postimg.cc/66nmfncR/Group-174-1.png'
+            width={70}
+            height={70}
+            alt='profile'
+          />
         </div>
       </div>
       <div className='grid grid-cols-10'>
@@ -39,7 +46,7 @@ const Homepage = () => {
 
         <div className='col-span-7 mt-5 mr-5'>
           <div>
-            {content && (
+            {Object.keys(content).length > 0 && (
               <div className='card  w-full '>
                 <div
                   className={`${
@@ -48,7 +55,10 @@ const Homepage = () => {
                 >
                   {dua_name_en && (
                     <div className='flex mb-3'>
-                      <Image src={arbi} alt='arbi' />
+                      <img
+                        src='https://i.postimg.cc/0QtGmrGR/allah-1-Traced.png'
+                        alt='arbi'
+                      />
                       <h2 className='list-decimal text-[#1FA45B] text-lg ml-2 place-items-center'>
                         {dua_name_en}
                       </h2>

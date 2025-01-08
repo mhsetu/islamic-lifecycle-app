@@ -1,23 +1,17 @@
 'use client';
 import logo from '../../public/assets/logo.png';
-import home from '../../public/assets/home 1.png';
-import menu from '../../public/assets/54-menu-2.png';
-import memorize from '../../public/assets/memorize 1.png';
-import books from '../../public/assets/books 1.png';
-import dua from '../../public/assets/dua-info 1.png';
-import ruqyah from '../../public/assets/ruqyah 1.png';
+
 import support from '../../public/assets/I want to support.png';
-import saved from '../../public/assets/3-keep-minus.png';
+
 import Image from 'next/image';
-import OuterLayoutRouter from 'next/dist/client/components/layout-router';
 
 const CustomLayout = () => {
   return (
-    <div >
+    <div>
       <div className='mt-6 '>
         <div className='bg-base-100 shadow-md mx-6 w-[100px] h-[680px] mb-10 rounded-[24px] overflow-scroll overflow-x-hidden'>
-          <Image
-            src={logo}
+          <img
+            src='https://i.postimg.cc/wj3CsshH/logo.png'
             height={76}
             width={76}
             alt='logo'
@@ -25,8 +19,8 @@ const CustomLayout = () => {
           />
           <div className='mt-10 mx-6'>
             <button className='bg-[#E8F0F5] btn-circle  my-3'>
-              <Image
-                src={home}
+              <img
+                src='https://i.postimg.cc/wxZTvgK1/home-1.png'
                 alt='home'
                 className='mx-3'
                 height={22}
@@ -34,8 +28,8 @@ const CustomLayout = () => {
               />
             </button>
             <button className='bg-[#E8F0F5] btn-circle   my-3'>
-              <Image
-                src={menu}
+              <img
+                src='https://i.postimg.cc/L5yS4Pnx/54-menu-2.png'
                 alt='menu'
                 className='mx-3'
                 height={22}
@@ -43,8 +37,8 @@ const CustomLayout = () => {
               />
             </button>
             <button className='bg-[#E8F0F5] btn-circle   my-3'>
-              <Image
-                src={memorize}
+              <img
+                src='https://i.postimg.cc/FHkvm7mx/memorize-1.png'
                 alt='memorize'
                 className='mx-3'
                 height={22}
@@ -52,8 +46,8 @@ const CustomLayout = () => {
               />
             </button>
             <button className='bg-[#E8F0F5] btn-circle   my-3'>
-              <Image
-                src={saved}
+              <img
+                src='https://i.postimg.cc/pdB6tH9Z/3-keep-minus.png'
                 alt='saved'
                 className='mx-3'
                 height={22}
@@ -61,8 +55,8 @@ const CustomLayout = () => {
               />
             </button>
             <button className='bg-[#E8F0F5] btn-circle   my-3'>
-              <Image
-                src={ruqyah}
+              <img
+                src='https://i.postimg.cc/vZ00PvCq/ruqyah-1.png'
                 alt='ruqyah'
                 className='mx-3'
                 height={22}
@@ -70,8 +64,8 @@ const CustomLayout = () => {
               />
             </button>
             <button className='bg-[#E8F0F5] btn-circle   my-3'>
-              <Image
-                src={dua}
+              <img
+                src='https://i.postimg.cc/kXBG6Mq2/dua-info-1.png'
                 alt='dua'
                 className='mx-3'
                 height={22}
@@ -79,8 +73,8 @@ const CustomLayout = () => {
               />
             </button>
             <button className='bg-[#E8F0F5] btn-circle   my-3'>
-              <Image
-                src={books}
+              <img
+                src='https://i.postimg.cc/dt2sThgt/books-1.png'
                 alt='books'
                 className='mx-3'
                 height={22}
@@ -89,7 +83,12 @@ const CustomLayout = () => {
             </button>
           </div>
           <div className='ml-2 mt-10 mb-16'>
-            <Image src={support} height={80} width={80} alt='support' />
+            <img
+              src='https://i.postimg.cc/Pxn9c30r/I-want-to-support.png'
+              height={80}
+              width={80}
+              alt='support'
+            />
           </div>
         </div>
       </div>
